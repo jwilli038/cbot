@@ -1,8 +1,25 @@
-{
-    "intents": [{
+ "intents": [{
             "tag": "greetings",
-            "patterns": ["hi there", "hello","haroo","yaw","wassup", "hi", "hey", "holla", "hello"],
+            "patterns": ["hi there","wassup", "hello","haroo","yaw","wassup", "hi", "hey", "holla", "hello"],
             "responses": ["hello thanks for checking in", "hi there, how can i help you"],
+            "context": [""]
+        },
+        {
+            "tag": "conf room",
+            "patterns": ["cr","conference room", "conf","reserve"],
+            "responses": ["The link for scheduling conference rooms is, https://usaf.dps.mil/sites/USSF-HQ-SpOC/DCG-T"],
+            "context": [""]
+        },
+        {
+            "tag": "fitness testing",
+            "patterns": ["fitness","pfa", "test","pt"],
+            "responses": ["The link for scheduling a pt test is, https://myfss.us.af.mil/USAFCommunity/s/ "],
+            "context": [""]
+        },
+        {
+            "tag": "Covid Policy",
+            "patterns": ["Covid","quarantine", "isolate","symptoms"],
+            "responses": ["The latest covid guidance can be found on the AO page. Here is the flow chart, https://usaf.dps.mil/sites/USSF-HQ-SpOC/AO/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FUSSF%2DHQ%2DSpOC%2FAO%2FShared%20Documents%2FP%2DS%20Garrison%20COVID%20Decision%20Pathway%20Aug%202021%2Epdf&parent=%2Fsites%2FUSSF%2DHQ%2DSpOC%2FAO%2FShared%20Documents&p=true"],
             "context": [""]
         },
         {
@@ -331,3 +348,4 @@
         }
     ]
 }
+
